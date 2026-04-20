@@ -1,0 +1,16 @@
+============================================================
+DATASET VALIDATION REPORT
+============================================================
+
+Files labeled: 121
+Files missing: 0
+
+Class Balance:
+  Deceptive: 61 | Truthful: 60
+
+Video Integrity Check:
+  Checked: 50 videos
+  Corrupt: 0
+  Avg duration: 28.0s
+
+============================================================

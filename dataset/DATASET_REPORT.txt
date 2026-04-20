@@ -1,0 +1,29 @@
+
+DATASET ORGANIZATION REPORT
+============================
+
+Total Videos: 121
+- Deceptive (class 1): 61
+- Truthful (class 0): 60
+
+Class Balance: 61/60 (BALANCED)
+
+Directory Structure:
+  dataset/
+    ├── videos/
+    │   ├── deceptive/     (61 videos)
+    │   └── truthful/      (60 videos)
+    ├── labels.json        (121 entries)
+    ├── features/          (to be populated)
+    ├── raw/               (original extracted files)
+    └── extract_and_scan.py
+
+Data Format:
+  - Labels: JSON with format {"video_id": 0/1} where 0=truthful, 1=deceptive
+  - Videos: MP4 format in class subdirectories
+  - Ready for feature extraction and model training
+
+Next Steps:
+  1. Extract audio and text features: python train.py --preprocess
+  2. Train model: python train.py --epochs 50
+  3. Launch dashboard: streamlit run dashboard.py
