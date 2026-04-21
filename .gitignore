@@ -1,16 +1,42 @@
-﻿dataset/videos/
+﻿# Large data files
+dataset/videos/
 dataset/raw/
 dataset/features/
 dataset/features/
+dataset/check_training_status.py
+dataset/extract_and_scan.py
+dataset/organize_dataset.py
+
+# Python cache
 __pycache__/
 *.pyc
 *.pyo
-.env
+*.pyd
+.Python
+*.egg-info/
+
+# Temp files
 tmp_*.py
 tmp_*.txt
 training_log.txt
-test_*.py
+test_different_results.py
 upgrade_dashboard.py
+retrain_model.py
+
+# Disabled pages
 pages_disabled/
-*.pt
-logs/
+
+# Environment
+.env
+.venv/
+venv/
+
+# Large model files (use Git LFS if needed)
+# checkpoints/*.pt
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs (keep training_history.json)
+logs/*.png
